@@ -38,9 +38,9 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 
 #create datasets
-train_dataset = QADataset('/home2/s4807189/experiments/khan/src-train.txt', '/home2/s4807189/experiments/khan/tgt-train.txt', tokenizer)
-val_dataset = QADataset('/home2/s4807189/experiments/khan/src-dev.txt', '/home2/s4807189/experiments/khan/tgt-dev.txt', tokenizer)
-test_dataset = QADataset('/home2/s4807189/experiments/khan/src-test.txt', '/home2/s4807189/experiments/khan/tgt-test.txt', tokenizer)
+train_dataset = QADataset('PATH TO src-train.txt', 'PATH TO tgt-train.txt', tokenizer)
+val_dataset = QADataset('PATH TO src-dev.txt', 'PATH TO tgt-dev.txt', tokenizer)
+test_dataset = QADataset('PATH TO src-test.txt', 'PATH TO tgt-test.txt', tokenizer)
 
 #create data loaders
 train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
