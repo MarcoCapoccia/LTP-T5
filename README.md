@@ -62,3 +62,6 @@ Our model tends to overfit a lot, despite our efforts to solve it. We have ident
 - **Hyperparameter Tuning:** Conduct a more thorough hyperparameter search to find the optimal settings that might prevent overfitting.
 - **Model Complexity:** Investigate if a simpler model could achieve better generalization for this specific task. We had to use the T5 model, so simplification was not an option.
 - **Computational Efficiency:** Explore ways to optimize the training process to make it more efficient and less resource-intensive.
+
+## Contact
+If you encounter any problems at all please contact us at e.b.baho@student.rug.nl or m.capoccia@student.rug.nl.
